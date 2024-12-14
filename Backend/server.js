@@ -1,12 +1,16 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const authRoute = require("./routes/auth");
+const cors = require("cors");
 
 dotenv.config();
 
 const app = express();
-
+app.use(cors());
 app.use(express.json());
+app.use("/api/auth", authRoute);
+
 
 const connectDB = async () => {
     try {
@@ -32,4 +36,5 @@ const startServer = async () => {
         console.error("Failed to start server:", err.message);
     }
 };
+
 startServer();

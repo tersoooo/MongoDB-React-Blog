@@ -9,6 +9,9 @@ Frontend/build/
 .vscode/
 .idea/
 
+/uploads/
+
+
 # Logs
 npm-debug.log*
 yarn-debug.log*
