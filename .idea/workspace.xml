@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e3a0fca-fe0e-46c8-bec2-d8c711b53f7e" name="Changes" comment="" />
+    <list default="true" id="9e3a0fca-fe0e-46c8-bec2-d8c711b53f7e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +19,9 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2qA0g201mB3GbzPhzuZAoDYZltu" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -61,7 +69,7 @@
       <updated>1734090180131</updated>
       <workItem from="1734090181814" duration="2196000" />
       <workItem from="1734104281872" duration="10844000" />
-      <workItem from="1734181119609" duration="3144000" />
+      <workItem from="1734181119609" duration="4633000" />
     </task>
     <servers />
   </component>
