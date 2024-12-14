@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+
+    body, html, #root {
+        @apply min-h-screen antialiased font-Inter bg-primary-color text-white
+    }
+
+    .slider.container {
+        @apply bg-black
+    }
+
+}
