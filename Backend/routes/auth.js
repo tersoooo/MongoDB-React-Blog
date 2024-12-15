@@ -58,7 +58,8 @@ router.post('/login', async (req, res) => {
             message: "Login Successful",
             token,
             username: user.username,
-            profilePicture: `${req.protocol}://${req.get("host")}/uploads/${path.basename(user.profilePicture)}`,
+            userId: user._id,
+            profilePicture: `${req.protocol}://${req.get("host")}${user.profilePicture}`,
         });
     }catch (err){
         res.status(500).json({ message: 'Login Error!', error: err.message })

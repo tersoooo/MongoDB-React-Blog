@@ -22,8 +22,9 @@ const LoginModal = ({ isOpen, onClose, onLogin }) => {
                 password,
             });
 
-            const { token, username, profilePicture} = response.data
+            const { token, userId, username, profilePicture } = response.data;
 
+            localStorage.setItem("userId", userId);
             localStorage.setItem("token", token);
             localStorage.setItem("username", username);
             localStorage.setItem("profilePicture", profilePicture);

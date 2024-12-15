@@ -5,6 +5,7 @@ import {Link, NavLink} from "react-router-dom";
 import RegisterModal from './RegisterModal.jsx'
 import LoginModal from "./LoginModal.jsx";
 import { IoIosSettings } from "react-icons/io";
+import { BiLogOut } from "react-icons/bi";
 
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isLoginOpen, setIsLoginOpen] = useState(false);
     const [profilePicture, setProfilePicture] = useState(localStorage.getItem("profilePicture") || "");
-    const [settings, setSettings] = useState(true)
+    const [settings, setSettings] = useState(false)
 
 
     const [username, setUsername] = useState(localStorage.getItem("username") || "");
@@ -116,9 +117,9 @@ const Navbar = () => {
                                     )}
                                     <button
                                         onClick={handleLogout}
-                                        className="text-balance cursor-pointer font-medium bg-red-500 text-white w-[90px] h-[37px] flex items-center justify-center rounded text-black hover:bg-opacity-70 transition-all"
+                                        className="text-balance cursor-pointer font-medium bg-red-500 text-white w-[90px] h-[37px] flex items-center justify-center rounded  hover:bg-opacity-70 transition-all"
                                     >
-                                        Logout
+                                        <BiLogOut size={22}/>
                                     </button>
                                 </>
                             ) : (

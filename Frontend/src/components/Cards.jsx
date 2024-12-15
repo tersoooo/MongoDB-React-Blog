@@ -7,7 +7,7 @@ export default function Cards({ username,pp,image,title,desc,date }) {
                 <img
                     src={pp}
                     alt={username}
-                    className="object-cover rounded-full w-[35px]"
+                    className="object-cover rounded-full max-w-[35px] max-h-10"
                 />
                 <p className="text-second-color text-sm">{username}</p>
             </div>
