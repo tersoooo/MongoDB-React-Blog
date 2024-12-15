@@ -6,6 +6,7 @@ import Register from "./pages/Register.jsx";
 import Footer from "./components/Footer.jsx";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import AddPost from "./pages/AddPost.jsx";
 
 function App() {
 
@@ -21,13 +22,14 @@ function App() {
             pauseOnFocusLoss
             draggable
             pauseOnHover
-            theme="dark"
+            theme="light"
         />
         <Navbar />
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/add-post" element={<AddPost />} />
         </Routes>
         <Footer />
     </div>

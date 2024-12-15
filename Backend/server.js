@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const authRoute = require("./routes/auth");
 const cors = require("cors");
+const path = require("path");
 
 dotenv.config();
 
@@ -22,9 +23,16 @@ const connectDB = async () => {
     }
 };
 
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+
+
 app.get('/', (req, res) => {
     res.send('Backend working!');
 });
+
+const postRoute = require('./routes/Post')
+
+app.use('/api/post', postRoute)
 
 
 const PORT = process.env.PORT || 5000;
